@@ -40,10 +40,10 @@
             <h1 class="w-25 mt-20 position-absolute ml-5">PRUEBA LAS NUEVAS PRESAS</h1>
         </div>
         <div style="height: 10vh;" class="d-flex flex-column justify-content-around align-items-center">
-            <hr class="w-75 m-0" >
-            <hr class="m-0" style="width: 90%;">
-            <hr class="w-75 m-0">
-            <hr class="w-50 m-0">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="m-0" style="width: 90%;" aria-hidden="true">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="w-50 m-0" aria-hidden="true">
         </div>
         <div class="position-relative background-2 d-flex flex-column overflow-hidden">
             <h1 style="top:1.5em" class="w-100 position-absolute text-center">Presas que nunca has visto</h1>
@@ -52,10 +52,10 @@
             </div>
         </div>
         <div style="height: 10vh;" class="d-flex flex-column justify-content-around align-items-center">
-            <hr class="w-75 m-0" >
-            <hr class="m-0" style="width: 90%;">
-            <hr class="w-75 m-0">
-            <hr class="w-50 m-0">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="m-0" style="width: 90%;" aria-hidden="true">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="w-50 m-0" aria-hidden="true">
         </div>
         <div class="background-3 position-relative overflow-hidden d-flex flex-column justify-content-center">
             <div class="rectangle-feature position-relative pl-5 pr-5 m-20p" style="margin-right:10%; overflow: auto;">
@@ -66,10 +66,10 @@
 
         </div>
         <div style="height: 10vh;" class="d-flex flex-column justify-content-around align-items-center">
-            <hr class="w-75 m-0" >
-            <hr class="m-0" style="width: 90%;">
-            <hr class="w-75 m-0">
-            <hr class="w-50 m-0">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="m-0" style="width: 90%;" aria-hidden="true">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="w-50 m-0" aria-hidden="true">
         </div>
         <div class="background-4 overflow-hidden d-flex justify-content-around align-items-center flex-wrap">
 
@@ -104,17 +104,18 @@
             <li class="ml-5"><a href=""><p>Clases</p></a></li>
         </ul>
         <div class="d-flex flex-row flex-grow-1 flex-wrap">
-            <p class="text-white  align-self-end mr-2" style="font-size: 10px !important;">ATENCIÓN AL CLIENTE</p>
-            <p class="text-white  align-self-end ml-2" style="font-size: 10px !important;">POLÍTICA DE PRIVACIDAD</p>
-            
+            <a class="text-white  align-self-end mr-2" style="font-size: 10px !important;" href="">ATENCIÓN AL CLIENTE</a>
+            <a class="text-white  align-self-end mr-2" style="font-size: 10px !important;"href="">POLÍTICA DE PRIVACIDAD</a>
         </div>
     </footer>
     <script>
         function abrirBarraLateral() {
+            document.getElementById("mySidenav").style.display = "block";
             document.getElementById("mySidenav").style.width = "250px";
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.display = "none";
         }
     </script>
 </body>
