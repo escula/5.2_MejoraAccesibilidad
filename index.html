@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Up</title>
-    
+    <meta name="description" content="Rock up rocódromo indoor  clases escalada climbing climb">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,28 +16,28 @@
 <body>
     <header style="height: 75px;">
         <nav class="d-flex flex-row justify-content-between h-100 mr-5 ml-5 flex-wrap">
-            <img class="align-self-center h-75 w-auto" src="assets/logo_negro.png" alt="">
+            <a href="index.html" class=" align-self-center " tabindex="0"><img src="assets/logo_negro.png" alt="logo rock up" style="width:75px;"></a>
             <ul class="list-inline  gap-3 flex-row align-items-center m-0" >
                 <li class="mr-2"><a href="errorPage.html">COMPETICIONES</a></li>
                 <li class="mr-2"><a href="errorPage.html">ENTRADAS</a></li>
                 <li class="mr-2"><a href="errorPage.html">CLASES</a></li>
             </ul>
-            <a href="" class="align-self-center"><img src="assets/icons8-lupa.svg" alt=""></a>
-            <a class="align-self-center" href="registro.html"><img src="assets/iconUser.svg" alt=""></a>
+            <a href="errorPage.html" class="align-self-center"><img src="assets/icons8-lupa.svg" alt="icono buscador"></a>
+            <a href="registro.html" class="align-self-center" href="registro.html"><img src="assets/iconUser.svg" alt="icono logearse"></a>
             <span id="botonMenuLateral"class="align-self-center pulsador-menu-lateral"style="font-size:30px;cursor:pointer " onclick="abrirBarraLateral()">&#9776;</span>
         </nav>
     </header>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">COMPETICIONES</a>
-        <a href="#">ENTRADAS</a>
-        <a href="#">CLASES</a>
+        <button class="closebtn" onclick="closeNav()">&times;<button/>
+        <a href="errorPage.html">COMPETICIONES</a>
+        <a href="errorPage.html">ENTRADAS</a>
+        <a href="errorPage.html">CLASES</a>
     </div>
 
     <main>
         <div class="background-1 d-flex flex-column position-relative">
-            <h1 class="w-25 mt-20 position-absolute ml-5">PRUEBA LAS NUEVAS PRESAS</h1>
+            <h1 class="w-25 mt-20 position-absolute ml-5" tabindex="0">PRUEBA LAS NUEVAS PRESAS</h1>
         </div>
         <div style="height: 10vh;" class="d-flex flex-column justify-content-around align-items-center">
             <hr class="w-75 m-0" aria-hidden="true">
@@ -46,7 +46,7 @@
             <hr class="w-50 m-0" aria-hidden="true">
         </div>
         <div class="position-relative background-2 d-flex flex-column overflow-hidden">
-            <h1 style="top:1.5em" class="w-100 position-absolute text-center">Presas que nunca has visto</h1>
+            <h1 style="top:1.5em" class="w-100 position-absolute text-center" tabindex="0">Presas que nunca has visto</h1>
             <div class="d-flex justify-content-center flex decorator-border h-100 overflow-hidden">
                 <img src="assets/presas_1.png" alt="tipos de presas escalada" class="imagen-presas overflow-hidden">
             </div>
@@ -59,8 +59,8 @@
         </div>
         <div class="background-3 position-relative overflow-hidden d-flex flex-column justify-content-center">
             <div class="rectangle-feature position-relative pl-5 pr-5 m-20p" style="margin-right:10%; overflow: auto;">
-                <h1>el rocódromo más grande de europa</h1>
-                <h3>Cuente con 5500 m2 escalables, con todos los niveles de escalada conocidos</h3>
+                <h1 tabindex="0">el rocódromo más grande de europa</h1>
+                <h2 tabindex="0">Cuente con 5500 m2 escalables, con todos los niveles de escalada conocidos</h2>
             </div>
             <div id="triangle" class="position-absolute"></div>
 
@@ -75,15 +75,14 @@
 
             <div class="poly d-flex flex-column justify-content-center align-items-center">
 
-                <h1 class="text-center mb-5 w-50">clases particulares y grupales</h1>
-                <h3 class="text-center w-50 mt-5">Adaptadas a todas las edades y a cualquier tamaño de grupo</h3>
+                <h1 class="text-center mb-5 w-50" tabindex="0">clases particulares y grupales</h1>
+                <h2 class="text-center w-50 mt-5" tabindex="0">Adaptadas a todas las edades y a cualquier tamaño de grupo</h2>
             </div>
 
             <div class="cuadrado position-relative d-flex align-items-center position-relative overflow-hidden">
 
                 <img src="assets/ninos.jpeg" alt="" style="position: absolute; width: 100%; height: auto; top: 0; left: 0; clip-path: polygon(1% 1%, 99% 1%, 1% 99%)">
                 <img src="assets/adultos.jpeg" alt="" style="position: absolute; width: 100%; height: auto; top: 0; left: 0; clip-path: polygon(99% 99%, 99% 1%, 1% 99%)">
-                <hr class="split-bar w-100" >
 
             </div>
         </div>
@@ -91,21 +90,21 @@
         
     </main>
     <footer class="d-flex flex-column align-items-center">
-        <img class="w-auto mt-5" src="assets/logo_blanco.png" alt="" style="height: 20%;;">
+        <img class="w-auto mt-5" src="assets/logo_blanco.png" alt="" style="height: 20%;">
         <ul class="list-inline d-flex flex-row align-items-center mt-4 m-0">
-            <li><a href=""><img src="assets/insta.png" alt=""></a></li>
-            <li class="ml-5"><a href=""><img src="assets/twitter.png" alt=""></a></li>
-            <li class="ml-5"><a href=""><img src="assets/iconTiktok.png" alt=""></a></li>
+            <li><a href="errorPage.html"><img src="assets/insta.png" alt="logo instagram"></a></li>
+            <li class="ml-5"><a href="errorPage.html"><img src="assets/twitter.png" alt="logo twitter"></a></li>
+            <li class="ml-5"><a href="errorPage.html"><img src="assets/iconTiktok.png" alt="logo TikTok"></a></li>
         </ul>
         <hr class="bg-light mt-5 w-75">
         <ul class="list-inline d-flex flex-row align-items-center mt-4 m-0 ">
-            <li><a href=""><p>Competiciones</p></a></li>
-            <li class="ml-5"><a href=""><p>Horarios</p></a></li>
-            <li class="ml-5"><a href=""><p>Clases</p></a></li>
+            <li><a href="errorPage.html"><p>Competiciones</p></a></li>
+            <li class="ml-5"><a href="errorPage.html"><p>Horarios</p></a></li>
+            <li class="ml-5"><a href="errorPage.html"><p>Clases</p></a></li>
         </ul>
         <div class="d-flex flex-row flex-grow-1 flex-wrap">
-            <a class="text-white  align-self-end mr-2" style="font-size: 10px !important;" href="">ATENCIÓN AL CLIENTE</a>
-            <a class="text-white  align-self-end mr-2" style="font-size: 10px !important;"href="">POLÍTICA DE PRIVACIDAD</a>
+            <a class="text-white  align-self-end mr-2" style="font-size: 10px !important;" href="errorPage.html">ATENCIÓN AL CLIENTE</a>
+            <a class="text-white  align-self-end mr-2" style="font-size: 10px !important;"href="errorPage.html">POLÍTICA DE PRIVACIDAD</a>
         </div>
     </footer>
     <script>
