@@ -28,7 +28,24 @@ main>div{
 nav >ul{
     display: flex;
 }
+.botonMuteo{
+    position: sticky;
+    display: block;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
 
+.muterImg{
+    color: white;
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
 .background-1{
     background-image: var(--photo-background-1);
     background-position: center;

@@ -25,6 +25,7 @@
             <a href="errorPage.html" class="align-self-center"><img src="assets/icons8-lupa.svg" alt="icono buscador"></a>
             <a href="registro.html" class="align-self-center" href="registro.html"><img src="assets/iconUser.svg" alt="icono logearse"></a>
             <span id="botonMenuLateral"class="align-self-center pulsador-menu-lateral"style="font-size:30px;cursor:pointer " onclick="abrirBarraLateral()">&#9776;</span>
+
         </nav>
     </header>
 
@@ -36,6 +37,35 @@
     </div>
 
     <main>
+        <div class="h-100 w-100" style="background-color: black;">
+            <button class="botonMuteo" onclick="mutearOPonerAudio()">
+                <img id="mutearODesmutear" class="muterImg" src="assets/volume-xmark-solid.svg" alt="video sin volumen">
+            </button>
+            
+            <video id="video" src="assets/escalada.mp4" muted autoplay loop style="width: 100%; height: auto; object-fit: cover;">
+            <script>
+                function mutearOPonerAudio() {
+
+                    
+                    const video=document.getElementById('video');
+                    const iconoMuted=document.getElementById('mutearODesmutear')
+                    if (video.muted == true) {
+                        iconoMuted.setAttribute("src","assets/volume-high-solid.svg")
+                        video.muted = false;
+                    } else {
+                        iconoMuted.setAttribute("src","assets/volume-xmark-solid.svg")
+                        video.muted = true;
+
+                    }
+                }
+            </script>
+        </div>
+        <div style="height: 10vh;" class="d-flex flex-column justify-content-around align-items-center">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="m-0" style="width: 90%;" aria-hidden="true">
+            <hr class="w-75 m-0" aria-hidden="true">
+            <hr class="w-50 m-0" aria-hidden="true">
+        </div>
         <div class="background-1 d-flex flex-column position-relative">
             <h1 class="w-25 mt-20 position-absolute ml-5" tabindex="0">PRUEBA LAS NUEVAS PRESAS</h1>
         </div>
